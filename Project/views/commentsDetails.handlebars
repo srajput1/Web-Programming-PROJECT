@@ -1,0 +1,25 @@
+<h2 class="page-header">Add Comments</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/users/commentsDetails">
+    <div class="form-group">
+        <label>Comment id</label>
+        <input type="text" class="form-control" name="id" placeholder="Enter numbers only">
+    </div>
+    <div class="form-group">
+        <label>Comments Description</label>
+        <input type = "text" class = "form-control" name="commentsDescrip" placeholder="commentsDescrip">
+    </div>
+    <div class="form-group">
+        <label>User name</label>
+        <input type="text" class="form-control" name="name1" placeholder="userName">
+    </div>
+    <div class="form-group">
+        <label>Recipe Title</label>
+        <input type="text" class="form-control" name="title1" placeholder="recipeTitle">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

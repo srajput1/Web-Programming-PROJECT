@@ -1,0 +1,13 @@
+<h2 class="page-header">Find Recipe by Recipe Title</h2>
+{{#if error}}
+    {{#each error}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/users/recipesDetails">
+    <div class="form-group">
+        <label>Recipe Title</label>
+        <input type = "text" class = "form-control" name = "title1" placeholder="recipeTitle">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

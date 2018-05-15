@@ -1,0 +1,34 @@
+<h2 class="page-header">Add Recipes</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/users/recipes">
+<div class="form-group">
+    <label>Recipe id</label>
+    <input type="text" class="form-control" name="id" placeholder="Enter numbers only">
+</div>
+<div class="form-group">
+    <label>recipe category</label>
+    <input type = "text" class = "form-control" name="cat" placeholder="recipeCategory">
+</div>
+<div class="form-group">
+    <label>user name</label>
+    <input type="text" class="form-control" name="name1" placeholder="userName">
+</div>
+<div class="form-group">
+    <label>recipe title</label>
+    <input type="text" class="form-control" name="recipeTitle1" placeholder="recipeTitle">
+</div>
+<div class="form-group">
+    <label>recipe description</label>
+    <input type="text" class="form-control" name="descrip" placeholder="recipeDescrip">
+</div>
+    <div class="form-group">
+        <label>Recipe Method</label>
+        <input type = "text" class="form-control" name ="recipeMethod" placeholder="Recipe Method">
+        <!--<input type="text" class="form-control" name="descrip" placeholder="recipeMethod"> -->
+    </div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,14 @@
+
+<h2 class="page-header">Find Comment by Comment ID</h2>
+{{#if error}}
+    {{#each error}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/users/commentsearch">
+    <div class="form-group">
+        <label>Comment ID</label>
+        <input type = "text" class = "form-control" name = "commentID" placeholder="Comment ID">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
